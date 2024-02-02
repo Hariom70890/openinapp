@@ -1,0 +1,219 @@
+.mainContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.part1 {
+  background-image: url("../assets/loginBackground.svg");
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 67px;
+}
+
+.logoHeading {
+  margin: auto;
+  font-family: Montserrat;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+}
+
+.part2 {
+  background-color: #fff;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 93px;
+}
+
+.signText {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.signText2 {
+  color: #000;
+  font-family: "Lato";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.logo {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.blue-vector {
+  position: absolute;
+  top: 0;
+  left: 39px;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}
+
+.logo-image {
+  z-index: 1;
+}
+
+#loginForm {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#loginForm form {
+  font-family: Lato, sans-serif;
+}
+
+#loginForm form p {
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-bottom: 11px;
+}
+
+#loginForm form input {
+  background: #f5f5f5;
+  border: none;
+  width: 100%;
+  height: 44px;
+  border-radius: 10px;
+  padding: 11px 16px;
+  margin-bottom: 22px;
+  font-family: Lato, sans-serif;
+}
+
+#loginForm form input:focus {
+  outline: none;
+}
+
+#loginForm form input[type='submit'] {
+  cursor: pointer;
+  margin-top: 11px;
+  margin-bottom: 44px;
+  background: #605bff;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.additional-links {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.buttons button {
+  cursor: pointer;
+  border-radius: 3px;
+  width: 172.591px;
+  height: 31px;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid lightgray;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #858585;
+}
+
+.logodiv {
+  width: 299px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 144px;
+}
+
+.logodiv2 {
+  display: none;
+}
+
+.nav-login {
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .part1 {
+    display: none;
+  }
+
+  .nav-login {
+    display: block;
+    background-color: #605bff;
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .logodiv {
+    display: none;
+  }
+
+  .logodiv2 {
+    display: flex;
+    margin: auto;
+  }
+
+  .part2 {
+    margin: auto;
+    width: 100%;
+    padding-left: 20px;
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .signInButton {
+    width: 50%;
+  }
+
+  form {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+  }
+}
